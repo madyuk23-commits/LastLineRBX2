@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: roblox-admin-discord-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_GUILD_ID
+        sync: false
+      - key: DISCORD_ALLOWED_ROLE_ID
+        sync: false
+      - key: ROBLOX_API_KEY
+        sync: false
+      - key: ROBLOX_UNIVERSE_ID
+        sync: false
