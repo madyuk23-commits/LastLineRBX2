@@ -30,7 +30,7 @@ for (const command of commands) {
   client.commands.set(command.data.name, command);
 }
 
-client.once('ready', () => {
+client.once('clientReady', () => {
   console.log(`[Discord] Успешно вошёл как ${client.user.tag}`);
   console.log(`[Discord] Загружено команд: ${client.commands.size}`);
 });
